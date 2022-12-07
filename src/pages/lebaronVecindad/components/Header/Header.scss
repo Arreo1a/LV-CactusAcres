@@ -1,0 +1,19 @@
+@import "../../ColorLibrary.scss";
+
+$headerHeight: 50px;
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $mainColor;
+  color: $white;
+
+  height: $headerHeight;
+
+  .titleText {
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
