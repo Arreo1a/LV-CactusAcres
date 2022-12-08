@@ -1,0 +1,144 @@
+@import "../../ColorLibrary.scss";
+
+$navbarHeight: 60px;
+
+@media only screen and (max-width: 600px) {
+  .cactusAcresNavbar {
+    display: flex;
+
+    background-color: $offBlack;
+    color: white;
+
+    height: $navbarHeight;
+    width: 100%;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+
+      margin-left: 5px;
+      .logoImg {
+        filter: invert(1);
+
+        height: $navbarHeight - 10;
+      }
+    }
+
+    .textContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex: 1;
+
+      .titleText {
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+
+    .hamburgerContainer {
+      display: flex;
+      align-items: center;
+
+      .hamburgerIcon {
+        font-size: 25px;
+
+        margin-right: 10px;
+      }
+      .hamburgerIcon:hover {
+        transition: 300ms;
+        filter: brightness(0.8);
+      }
+
+      .closeDropdownIcon {
+        font-size: 35px;
+        font-weight: 500;
+
+        margin-right: 10px;
+      }
+
+      .closeDropdownIcon:hover {
+        transition: 300ms;
+        filter: brightness(0.8);
+      }
+    }
+  }
+  .dropdown {
+    position: absolute;
+    top: 58px;
+
+    background-color: $offBlack;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 7px;
+
+    width: 150px;
+
+    transform: translateX(-102%);
+
+    padding: 1rem;
+
+    overflow: hidden;
+
+    .dropdownItem {
+      display: flex;
+      align-items: center;
+
+      height: 50px;
+
+      border-radius: 7px;
+
+      padding: 0.5rem;
+
+      .menuLink {
+        font-size: large;
+      }
+    }
+
+    .dropdownItem:hover {
+      transition: 300ms;
+      background-color: #2a2a2c;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cactusAcresNavbar {
+    display: flex;
+
+    background-color: $offBlack;
+    color: white;
+
+    height: $navbarHeight;
+    width: 100%;
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+
+      margin-left: 5px;
+      .logoImg {
+        filter: invert(1);
+
+        height: $navbarHeight - 10;
+      }
+    }
+
+    .textContainer {
+      display: flex;
+      align-items: center;
+
+      width: 100px;
+
+      margin-left: 10px;
+
+      .titleText {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .hamburgerContainer {
+      display: none;
+    }
+  }
+}
