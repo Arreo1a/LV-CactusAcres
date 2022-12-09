@@ -1,0 +1,65 @@
+
+
+
+.cactusAcresHomePage{
+  
+    .homePage{
+        margin:10px 10px;
+        .heroSection{
+           
+
+            @media  (min-width:768px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 10px 10px;
+            }
+            
+            .text-boxes{
+
+                .title{
+
+                    .welcome{
+                       
+                        
+                        color:#1b1c1d;
+                        justify-content:center;
+                        text-align:center;
+                        font-size:2.3em;
+                        border-radius:10px;
+                       
+                        
+
+                        @media  (min-width:768px){
+                            font-size:5em;
+                        }
+                        
+                    }
+                }
+
+            }
+
+            .slideshow-CactusAcres{
+
+            }
+
+            .button-contact{
+                justify-content:center;
+                text-align:center;
+              
+
+                .btn-contact{
+                    background:#1b1c1d;
+                    color:white;
+                    width:90%;
+
+                    font-size:2em;
+                    border-radius:10px;
+
+                    @media  (min-width:768px){
+                        font-size:3em;
+                    }
+                }
+            }
+        }
+    }
+}
