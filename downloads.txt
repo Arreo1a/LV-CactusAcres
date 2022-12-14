@@ -27,3 +27,10 @@ i18n
 })
 
 
+
+//mapa leaflet raect
+
+
+npm install react react-dom leaflet   react-leaflet
+
+

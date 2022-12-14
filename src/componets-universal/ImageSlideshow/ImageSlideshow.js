@@ -19,7 +19,7 @@ const Slideshow = useRef(null);
 const next = () => {
  if(Slideshow.current.children.length > 0){
 
-  console.log("next -->")
+  
     const OneElement = Slideshow.current.children[0];
 
     Slideshow.current.style.transition= '500ms ease-out all';
@@ -44,7 +44,7 @@ const next = () => {
 
 const previous = () => {
   if (Slideshow.current.children.length > 0){
-    console.log("previous <--")
+    
 
     const index = Slideshow.current.children.length -1;
     const PreviousElement = Slideshow.current.children[index];

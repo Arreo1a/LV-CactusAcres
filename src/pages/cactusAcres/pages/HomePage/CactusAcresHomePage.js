@@ -7,7 +7,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 
 import CactusAcresNavbar from "../../components/Navbar/CactusAcresNavbar";
 import ImageSlideshowCactusAcres from "../../components/ImageSlideshow/ImageSlideshow-CactusAcres"
-
+import Map from "../../components/map/map"
+// scss
 import "./CactusAcresHomePage.scss"
 library.add(faPaperPlane)
 
@@ -26,7 +27,7 @@ function CactusAcresHomePage() {
       setLanguage(!language);
   }
 
-
+  
 
   return (
     <div className="cactusAcresHomePage">
@@ -43,18 +44,55 @@ function CactusAcresHomePage() {
             
                 </div>
             </div>
-
+            {/* Slide show */}
             <div className="slideshow-CactusAcres">
                 <ImageSlideshowCactusAcres/>
             </div>
 
-            <div className="button-contact">
-              <button className="btn-contact">{t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} /></button>
-            </div>
 
+          </div>
+            {/* Button Contact */}
+          <div className="button-contact">
+              <button className="btn-contact">{t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} /></button>
+          </div>
+
+            {/* Card */}
+          <div className="card">
+              <div class="boxs">
+                  <div class="title">
+                  <h3>Control de Acceso</h3>
+                  </div>
+                  <div class="text">
+                  <p>  Diseño de caseta único que te da la bienvenida a tu hogar,
+                    mientras se encarga de mantener tu entorno controlado. </p>
+                  </div>
+                </div>
+                <div class="boxs">
+                  <div class="title">
+                  <h3>Seguridad</h3>
+                  </div>
+                  <div class="text">
+                  <p>  cuidan de ti y tu patrimonio,
+                    para que te olvides de preocupaciones.</p>
+                  </div>
+                </div>
+                <div class="boxs">
+                  <div class="title">
+                    <h3>Instalaciones subterráneas</h3>
+                  </div>
+                  <div class="text">
+                    <p>Te permiten disfrutar de todo lo que te rodea.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class className="map">
+            <Map/>
           </div>
 
       </div>
+
+     
     </div>
   );
 }
