@@ -1,6 +1,9 @@
 $lotsBorderColor: rgb(170, 170, 170);
 
-.rayosDeSolNorteHomePage {
+$imgOfLotsHeight: 400px;
+$imgOfLotsWidth: 300px;
+
+.puestaDeSolHomePage {
   padding-top: 10px;
 
   .heroSection {
@@ -23,8 +26,8 @@ $lotsBorderColor: rgb(170, 170, 170);
 
         background-color: rgb(233, 233, 233);
         border: 1px solid $lotsBorderColor;
-        // border-radius: 15px;
 
+        // height: 100%;
         width: 300px;
 
         .lotContainer {
@@ -79,7 +82,7 @@ $lotsBorderColor: rgb(170, 170, 170);
 }
 
 @media only screen and (min-width: 500px) {
-  .rayosDeSolNorteHomePage {
+  .puestaDeSolHomePage {
     .heroSection {
       display: grid;
       grid-template-columns: 1fr 1fr;
