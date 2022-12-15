@@ -1,0 +1,36 @@
+//istall
+npm install --save styled-components   react-i18next   i18next  i18next-browser-languagedetector   i18next-http-backend 
+
+
+//versiones
+
+npm i i18next                            version:22.1.5
+npm i react-i18next                      version:12.1.1
+npm i i18next-browser-languagedetector   version:7.0.1
+npm install i18next-http-backend        version:desconcida
+
+
+ //i18next config
+
+import {initReactI18next} from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+import Backend from 'i18next-http-backend';
+import i18n from 'i18next';
+
+
+i18n
+.use(Backend)
+.use(LanguageDetector)
+.use(initReactI18next).init({
+    fallbackLng: "es",
+       
+})
+
+
+
+//mapa leaflet raect
+
+
+npm install react react-dom leaflet   react-leaflet
+
+
