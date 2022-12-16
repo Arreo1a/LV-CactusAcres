@@ -1,105 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Montserrat:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Montserrat:ital@1&display=swap");
 
-.cactusAcresHomePage{
-     font-family: 'Montserrat', sans-serif;
+@import "../../ColorLibrary.scss";
 
-    .homePage{
-        margin:10px 10px;
-        .heroSection{
-           
+.cactusAcresHomePage {
+  font-family: "Montserrat", sans-serif;
 
-            @media  (min-width:768px){
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                padding: 10px 10px;
-            }
-            
-            .text-boxes{
+  .homePage {
+    margin: 10px 10px;
+    .heroSection {
+      .titleSection {
+        .titleContainer {
+          .titleText {
+            display: flex;
+            text-align: center;
 
-                .title{
+            color: #1b1c1d;
 
-                    .welcome{
-                       
-                        font-family: 'Abril Fatface', cursive;
-                        color:#1b1c1d;
-                        justify-content:center;
-                        text-align:center;
-                        font-size:2.3em;
-                        border-radius:10px;
-                       
-                        
-
-                        @media  (min-width:768px){
-                            font-size:4.5em;
-                            margin: 10px 10px;
-                        }
-                        
-                    }
-                }
-
-            }
-
-            .slideshow-CactusAcres{
-
-            }
-
-            
+            font-size: 9.5vw;
+            font-family: "Amatic SC";
+            font-weight: lighter;
+          }
         }
+      }
 
-        .button-contact{
-            justify-content:center;
-            text-align:center;
-            
-            
-
-            .btn-contact{
-                background:#1b1c1d;
-                color:white;
-                width:90%;
-
-                font-size:2em;
-                border-radius:10px;
-                border: none;
-                margin: 10px;
-
-                @media  (min-width:768px){
-                    font-size:2.8em;
-                }
-            }
+      .slideshowContainer {
+        display: flex;
+        .slideshow-CactusAcres {
+          z-index: 0;
         }
+      }
 
-        .card{
-           flex-direction: column;
-            @media  (min-width:768px){
-                display: flex;
-                font-size:1.5em;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+      .contactBtnContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
 
-            }
-            .boxs{
-                border-radius: 10px;
-                border: 1px solid #1b1c1d;
-                justify-content: center;
-                align-items: center;
-               background-color: #cfffca;
-                margin: 5px 5px;
+        .btn-contact {
+          background: #b4914e;
 
-                .title{
-                    text-align: center;
-                }
+          color: white;
 
-                .text{
-                    text-align: center;
-                }
-            }
+          font-size: 1.5em;
+
+          border-radius: 10px;
+          border: none;
+
+          width: 100%;
+
+          margin: 10px;
+          padding: 2px 0px;
         }
-
-        .map{
-            background:#1b1c1d;
-        }
+      }
     }
 
-    
+    .heroSectionLargeScreen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 10px 10px;
+
+      .titleSection {
+        .titleContainer {
+          height: 80%;
+
+          .titleText {
+            font-family: "Amatic SC";
+            text-align: start;
+
+            font-size: 5.5vw;
+
+            font-weight: 100;
+            margin: 10px 10px;
+          }
+        }
+        .contactBtnContainer {
+          .btn-contact {
+            background: #b4914e;
+
+            color: white;
+
+            font-size: 2.8em;
+
+            width: 90%;
+
+            border-radius: 10px;
+            border: none;
+
+            margin: 10px;
+            padding: 2px 0px;
+          }
+        }
+      }
+
+      .slideshowContainer {
+        display: flex;
+        .slideshow-CactusAcres {
+          z-index: 0;
+        }
+      }
+    }
+
+    .allInfoCards {
+      display: flex;
+      justify-content: center;
+      .wrapAllInfoCards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .card {
+      flex-direction: column;
+      @media (min-width: 768px) {
+        display: flex;
+        font-size: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .boxs {
+        border-radius: 10px;
+        border: 1px solid #1b1c1d;
+        justify-content: center;
+        align-items: center;
+        background-color: #cfffca;
+        margin: 5px 5px;
+
+        .titleContainer {
+          text-align: center;
+        }
+
+        .text {
+          text-align: center;
+        }
+      }
+    }
+
+    .mapContainer {
+      display: flex;
+
+      .map {
+        z-index: 0;
+
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cactusAcresHomePage {
+    .homePage {
+      .heroSection {
+        .titleSection {
+          .titleContainer {
+            .titleText {
+            }
+          }
+          .contactBtnContainer {
+            .btn-contact {
+            }
+          }
+        }
+      }
+
+      .heroSectionLargeScreen {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cactusAcresHomePage {
+    .homePage {
+      .heroSection {
+        display: none;
+      }
+    }
+  }
 }

@@ -5,8 +5,15 @@ $navbarHeight: 60px;
 $hamburgerTransitionTime: 300ms;
 $hamburgerIconsMarginRight: 0px;
 
+.cactusAcresNavbar {
+  z-index: 1;
+}
+
 @media only screen and (max-width: 500px) {
   .cactusAcresNavbar {
+    position: fixed;
+    top: 0;
+
     display: flex;
 
     background-color: $offBlack;
@@ -44,6 +51,10 @@ $hamburgerIconsMarginRight: 0px;
       display: none;
     }
 
+    .changeLanguageBtnContainer {
+      display: none;
+    }
+
     .hamburgerContainer {
       display: flex;
       align-items: center;
@@ -69,6 +80,10 @@ $hamburgerIconsMarginRight: 0px;
       }
     }
   }
+  .pushContentDown {
+    height: $navbarHeight;
+  }
+
   .dropdown {
     position: absolute;
     top: 58px;
@@ -92,7 +107,7 @@ $hamburgerIconsMarginRight: 0px;
       text-decoration: none;
       color: white;
 
-      height: 50px;
+      height: 40px;
 
       border-radius: 7px;
 
@@ -101,9 +116,59 @@ $hamburgerIconsMarginRight: 0px;
       .menuLink {
         font-size: large;
       }
+
+      .changeLanguageBtnPhone {
+        text-align: start;
+
+        background-color: red;
+        color: white;
+        border: none;
+
+        font-size: large;
+
+        width: 100%;
+        padding: 0.5rem;
+      }
     }
 
     .dropdownItem:hover {
+      transition: 300ms;
+      background-color: #2a2a2c;
+    }
+
+    .dropdownItemBtn {
+      display: flex;
+      align-items: center;
+
+      text-decoration: none;
+      color: white;
+
+      height: 50px;
+
+      border-radius: 7px;
+
+      padding: 0.5rem;
+
+      .changeLanguageBtnPhone {
+        // background-color: red;
+        background-color: transparent;
+        color: white;
+        border: none;
+
+        width: 100%;
+        padding: 0.5rem;
+
+        .btnText {
+          text-align: start;
+
+          font-size: large;
+
+          margin-left: -8px;
+        }
+      }
+    }
+
+    .dropdownItemBtn:hover {
       transition: 300ms;
       background-color: #2a2a2c;
     }
@@ -112,6 +177,9 @@ $hamburgerIconsMarginRight: 0px;
 
 @media only screen and (min-width: 500px) {
   .cactusAcresNavbar {
+    position: fixed;
+    top: 0;
+
     display: flex;
 
     background-color: $offBlack;
@@ -178,6 +246,27 @@ $hamburgerIconsMarginRight: 0px;
       }
     }
 
+    .changeLanguageBtnContainer {
+      display: flex;
+      align-items: center;
+
+      .changeLanguageBtn {
+        background-color: transparent;
+        color: white;
+
+        border: none;
+        border-radius: 7px;
+
+        font-size: 20px;
+
+        padding: 5px 10px;
+      }
+
+      .changeLanguageBtn:hover {
+        background-color: #2a2a2c;
+      }
+    }
+
     .hamburgerContainer {
       display: none;
     }
@@ -185,5 +274,9 @@ $hamburgerIconsMarginRight: 0px;
 
   .dropdown {
     display: none;
+  }
+
+  .pushContentDown {
+    height: $navbarHeight;
   }
 }

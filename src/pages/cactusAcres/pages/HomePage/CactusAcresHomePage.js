@@ -1,98 +1,130 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-
+// Components
 import CactusAcresNavbar from "../../components/Navbar/CactusAcresNavbar";
-import ImageSlideshowCactusAcres from "../../components/ImageSlideshow/ImageSlideshow-CactusAcres"
-import Map from "../../components/map/map"
-// scss
-import "./CactusAcresHomePage.scss"
-library.add(faPaperPlane)
+import ImageSlideshowCactusAcres from "../../components/ImageSlideshow/ImageSlideshow-CactusAcres";
+import Map from "../../components/map/map";
+import InfoCards from "../../components/InfoCards/InfoCards";
 
+// scss
+import "./CactusAcresHomePage.scss";
+
+library.add(faPaperPlane);
 
 function CactusAcresHomePage() {
   const [language, setLanguage] = useState(false);
 
-  const [t,i18n] =  useTranslation(['welcome']);
+  const [t, i18n] = useTranslation(["welcome"]);
 
-  const changeToEnglish = () =>{
-      i18n.changeLanguage('en');
-      setLanguage(!language);
-  }
-  const changeToSpanish = () =>{
-      i18n.changeLanguage('es');
-      setLanguage(!language);
-  }
-
-  
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+    setLanguage(!language);
+  };
+  const changeToSpanish = () => {
+    i18n.changeLanguage("es");
+    setLanguage(!language);
+  };
 
   return (
     <div className="cactusAcresHomePage">
-      <CactusAcresNavbar />
+      <CactusAcresNavbar
+        currentLanguage={language}
+        changeToEnglish={changeToEnglish}
+        changeToSpanish={changeToSpanish}
+      />
       <div className="homePage">
-          <div className="heroSection">
-          <p>Idioma actual:{i18n.language}</p>
-                  {language ? <button onClick={changeToEnglish} >Change to English</button> :  <button onClick={changeToSpanish}>Cambiar a Español</button>}
-            <div className="text-boxes">
-                <div className="title">
-                  <p className="welcome">
-                   {t("title")}
-                  </p>
-            
-                </div>
+        <div className="heroSection">
+          <div className="titleSection">
+            <div className="titleContainer">
+              <div className="titleText">{t("title")}</div>
             </div>
-            {/* Slide show */}
+          </div>
+          <div className="slideshowContainer">
             <div className="slideshow-CactusAcres">
-                <ImageSlideshowCactusAcres/>
+              <ImageSlideshowCactusAcres />
             </div>
-
-
           </div>
-            {/* Button Contact */}
-          <div className="button-contact">
-              <button className="btn-contact">{t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} /></button>
+          <div className="contactBtnContainer">
+            <button className="btn-contact">
+              {t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} />
+            </button>
           </div>
-
-            {/* Card */}
-          <div className="card">
-              <div class="boxs">
-                  <div class="title">
-                  <h3>Control de Acceso</h3>
-                  </div>
-                  <div class="text">
-                  <p>  Diseño de caseta único que te da la bienvenida a tu hogar,
-                    mientras se encarga de mantener tu entorno controlado. </p>
-                  </div>
-                </div>
-                <div class="boxs">
-                  <div class="title">
-                  <h3>Seguridad</h3>
-                  </div>
-                  <div class="text">
-                  <p>  cuidan de ti y tu patrimonio,
-                    para que te olvides de preocupaciones.</p>
-                  </div>
-                </div>
-                <div class="boxs">
-                  <div class="title">
-                    <h3>Instalaciones subterráneas</h3>
-                  </div>
-                  <div class="text">
-                    <p>Te permiten disfrutar de todo lo que te rodea.</p>
-                  </div>
-              </div>
+        </div>
+        <div className="heroSectionLargeScreen">
+          <div className="titleSection">
+            <div className="titleContainer">
+              <div className="titleText">{t("title")}</div>
+            </div>
+            <div className="contactBtnContainer">
+              <button className="btn-contact">
+                {t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} />
+              </button>
+            </div>
           </div>
+          <div className="slideshowContainer">
+            <div className="slideshow-CactusAcres">
+              <ImageSlideshowCactusAcres />
+            </div>
+          </div>
+        </div>
 
+        <div className="allInfoCards">
+          <div className="wrapAllInfoCards">
+            <InfoCards
+              title={"Control de Acceso"}
+              description={
+                "Diseño de caseta único que te da la bienvenida a tu hogar, mientras se encarga de mantener tu entorno controlado"
+              }
+            />
+            <InfoCards
+              title={"Seguridad"}
+              description={
+                "cuidan de ti y tu patrimonio, para que te olvides de preocupaciones."
+              }
+            />
+            <InfoCards
+              title={"Instalaciones subterráneas"}
+              description={"Te permiten disfrutar de todo lo que te rodea."}
+            />
+            {/* <InfoCards
+              title={"Privacidad"}
+              description={
+                "Gracias al control de acceso puedes estar seguro de tener la privacidad que tu y tu familia necesitan."
+              }
+            />
+            <InfoCards
+              title={"Plusvalía"}
+              description={
+                '"Un patrimonio es la mejor inversion Pensado en lotes residenciales que te ofrecen la oportunidad de que cada residencia aumente el valor de tu vivienda y puedas ser parte de una comunidad con la que te identifiques en un lugar donde puedas crecer.'
+              }
+            />
+            <InfoCards
+              title={"Servicios"}
+              description={
+                "Te aseguran de tener tus servicios siempre disponibles, como agua potable y electricidad."
+              }
+            />
+
+            <InfoCards
+              title={"Zona Segura"}
+              description={
+                "Una zona pensada para que disfrutes al aire libre y sin preocupaciones con tus amigos y familiares mientras gozas de momentos inolvidables."
+              } 
+            />
+            */}
+          </div>
+        </div>
+
+        <div className="mapContainer">
           <div class className="map">
-            <Map/>
+            <Map />
           </div>
-
+        </div>
       </div>
-
-     
     </div>
   );
 }

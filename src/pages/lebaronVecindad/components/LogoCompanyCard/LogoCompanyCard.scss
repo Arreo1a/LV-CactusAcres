@@ -1,18 +1,21 @@
 @import "../../ColorLibrary.scss";
 
-$companyCardHeight: 300px;
-$companyCardWidth: 280px;
+$cardHeight: 300px;
+$cardWidth: 280px;
 
-$companyLogoImgHeight: $companyCardHeight/2 - 10px;
+$logoImgHeight: $cardHeight/2 - 10px;
+
+// $logoImgHeight: $cardHeight/2;
 
 $availableTextSize: 25px;
 
+// .cardContainer {
 .logoCompanyCard {
   background-color: $offWhite;
   border: 1px solid rgb(228, 228, 228);
 
-  height: $companyCardHeight;
-  width: $companyCardWidth;
+  height: $cardHeight;
+  width: $cardWidth;
 
   border-radius: 7px;
 
@@ -27,14 +30,14 @@ $availableTextSize: 25px;
 
     border-radius: 7px 7px 0px 0px;
 
-    height: $companyCardHeight / 2;
+    height: $cardHeight / 2;
 
     .companyLogoImg {
-      height: $companyLogoImgHeight;
+      height: $logoImgHeight;
     }
 
     .invertedCompanyLogoImg {
-      height: $companyLogoImgHeight;
+      height: $logoImgHeight;
       filter: invert(1);
     }
 

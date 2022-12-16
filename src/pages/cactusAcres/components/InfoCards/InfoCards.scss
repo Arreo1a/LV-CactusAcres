@@ -1,0 +1,28 @@
+.infoCard {
+  //   background-color: rgb(241, 241, 241);
+
+  //   border: 1px solid rgb(194, 194, 194);
+  border-left: 1px solid rgb(194, 194, 194);
+  border-bottom: 1px solid rgb(194, 194, 194);
+  border-bottom-left-radius: 7px;
+
+  //   border-radius: 7px;
+
+  width: 340px;
+
+  //   margin: 0px 5px 5px 5px;
+
+  .titleText {
+    // text-align: center;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    margin: 10px 0px 5px 5px;
+  }
+
+  .infoText {
+    margin: 0px 5px 5px 5px;
+    height: 100%;
+  }
+}
