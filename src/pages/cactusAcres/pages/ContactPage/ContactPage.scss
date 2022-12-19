@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Montserrat:ital@1&display=swap");
+
+.content-contact-page-wrapper {
+  font-family: "Montserrat", sans-serif;
+  @media screen {
+    max-width: 575px;
+  }
+
+  .header-contact-page-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    align-items: center;
+
+    .back-arrow {
+      font-size: 2em;
+      margin-left: 1em;
+    }
+
+    .contact {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      font-weight: bold;
+      margin-right: 1em;
+    }
+  }
+
+  .left-column-contact-page {
+    display: flex;
+    justify-content: center;
+
+    .bullet-point-group {
+      display: grid;
+    }
+  }
+}

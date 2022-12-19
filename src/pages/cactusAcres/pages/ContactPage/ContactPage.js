@@ -1,5 +1,6 @@
 import "./ContactPage.scss";
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkedAlt,
@@ -23,6 +24,7 @@ const ContactPage = () => {
         "service_dr57svc",
         "template_dev8ezp",
         form.current,
+        e.target,
         "mFN4kVXDFIStEkkSu"
       )
       .then(
@@ -38,26 +40,33 @@ const ContactPage = () => {
     <div className="content-contact-page-wrapper">
       <div className="header-contact-page-wrapper">
         <div className="back-arrow">
-          <FontAwesomeIcon icon={faCircleArrowLeft} />
+          <Link style={{ color: "white" }} to="/cactus-acres">
+            <FontAwesomeIcon icon={faCircleArrowLeft} />
+          </Link>
         </div>
-        <h1>Contact</h1>
+        <div className="contact">Contact</div>
       </div>
-      ;
+
       <div className="left-column-contact-page">
         <div className="contact-bullet-points">
           <div className="bullet-point-group">
             <div className="icon">
-              <FontAwesomeIcon icon={faMapMarkedAlt} />
+              <a
+                href="https://goo.gl/maps/nCr7aJTuT1vhmF8n6"
+                target="_blank"
+                title="Ubicanos en el mapa"
+              >
+                <FontAwesomeIcon icon={faMapMarkedAlt} />
+                <div className="text">Col. LeBarón, CHIH</div>
+              </a>
             </div>
-
-            <div className="text">Col. LeBarón, CHIH</div>
           </div>
           <div className="bullet-point-group">
             <div className="icon">
               <FontAwesomeIcon icon={faPhone} />
             </div>
 
-            <div className="text">636-110-6896</div>
+            <div className="text">555-555-5555</div>
           </div>
 
           <div className="bullet-point-group">
@@ -65,7 +74,7 @@ const ContactPage = () => {
               <FontAwesomeIcon icon={faEnvelope} />
             </div>
 
-            <div className="text">josmislas12@gmail.com</div>
+            <div className="text">cactus-acres@gmail.com</div>
           </div>
         </div>
       </div>
@@ -89,10 +98,22 @@ const ContactPage = () => {
       </div>
       <div className="footer-contact-page">
         <div className="icon-whatsapp">
-          <FontAwesomeIcon icon={faWhatsapp} />
+          <a
+            href="https://api.whatsapp.com/send?phone=525555555555"
+            target="_blank"
+            title="Contactanos por Whatsapp"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
         </div>
         <div className="icon-messenger">
-          <FontAwesomeIcon icon={faFacebookMessenger} />
+          <a
+            href="https://m.me/josemiguel.islasvaldez"
+            target="_blank"
+            title="Contactanos por Messenger"
+          >
+            <FontAwesomeIcon icon={faFacebookMessenger} />
+          </a>
         </div>
       </div>
     </div>
