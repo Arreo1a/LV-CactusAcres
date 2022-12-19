@@ -1,0 +1,38 @@
+$headerHeight: 50px;
+
+$backgroundColor: #351b64;
+$textColor: #ffae00;
+
+.RDSNNavbar {
+  display: flex;
+  align-items: center;
+
+  background-color: $backgroundColor;
+  color: $textColor;
+
+  height: $headerHeight;
+
+  .backButton {
+    flex-direction: start;
+
+    text-decoration: none;
+    color: $textColor;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-left: 10px;
+  }
+
+  .titleTextContainer {
+    display: flex;
+    justify-content: center;
+
+    flex: 1;
+
+    .titleText {
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+}

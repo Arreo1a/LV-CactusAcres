@@ -34,3 +34,4 @@ i18n
 npm install react react-dom leaflet   react-leaflet
 
 
+npm i react-screen-orientation

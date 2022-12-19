@@ -1,0 +1,100 @@
+$lotsBorderColor: rgb(170, 170, 170);
+
+$imgOfLotsHeight: 400px;
+$imgOfLotsWidth: 300px;
+
+.puestaDeSolHomePage {
+  padding-top: 10px;
+
+  .heroSection {
+    .imgContainer {
+      display: flex;
+      justify-content: center;
+      .imgOfLots {
+        height: 400px;
+        width: 300px;
+      }
+    }
+
+    .listOfLotsContainer {
+      display: flex;
+      justify-content: center;
+
+      .listOfLots {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        background-color: rgb(233, 233, 233);
+        border: 1px solid $lotsBorderColor;
+
+        // height: 100%;
+        width: 300px;
+
+        .lotContainer {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          border-bottom: 1px solid $lotsBorderColor;
+
+          font-size: 18px;
+
+          .lotNumber {
+            margin-left: 20px;
+          }
+
+          .lotSoldText {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .footerSection {
+    background-color: rgb(53, 27, 100);
+    color: white;
+
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+    .descriptionText {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+
+      .mainText {
+        width: 90%;
+        margin-bottom: 5px;
+      }
+    }
+
+    .contactUsSection {
+      .contactMethodsContainer {
+        display: flex;
+        justify-content: space-evenly;
+
+        .contactMethod {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .puestaDeSolHomePage {
+    .heroSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .imgContainer {
+        display: flex;
+        justify-content: center;
+        .imgOfLots {
+          height: 550px;
+          width: 350px;
+        }
+      }
+    }
+  }
+}

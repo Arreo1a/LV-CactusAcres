@@ -1,0 +1,72 @@
+@import "../../ColorLibrary.scss";
+
+$companyCardHeight: 300px;
+$companyCardWidth: 280px;
+
+$companyLogoImgHeight: $companyCardHeight/2 - 10px;
+
+$availableTextSize: 25px;
+
+.logoCompanyCard {
+  background-color: $offWhite;
+  border: 1px solid rgb(228, 228, 228);
+
+  height: $companyCardHeight;
+  width: $companyCardWidth;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  margin: 5px;
+
+  .topSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 7px 7px 0px 0px;
+
+    height: $companyCardHeight / 2;
+
+    .companyLogoImg {
+      height: $companyLogoImgHeight;
+    }
+
+    .invertedCompanyLogoImg {
+      height: $companyLogoImgHeight;
+      filter: invert(1);
+    }
+
+    .noLogoNameOfCompanyText {
+      font-size: 25px;
+    }
+  }
+
+  .bottomSection {
+    .companyName {
+      font-size: 30px;
+      font-weight: 500;
+
+      color: $black;
+
+      margin-left: 5px;
+    }
+
+    .isAvailableText {
+      font-size: $availableTextSize;
+      font-weight: 400;
+
+      color: $secondaryColor;
+
+      margin-left: 5px;
+    }
+    .notAvailableText {
+      font-size: $availableTextSize;
+      font-weight: 400;
+
+      color: rgb(197, 38, 38);
+      margin-left: 5px;
+    }
+  }
+}
