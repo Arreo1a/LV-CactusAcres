@@ -1,6 +1,4 @@
-import React,{ } from "react";
-import useScreenOrientation from 'use-screen-orientation';
-
+import React from 'react'
 
 import CactusAcresNavbar from "../../components/Navbar/CactusAcresNavbar";
 import "./CactusAcresAboutPage..scss";
@@ -12,8 +10,6 @@ import Img3 from "./AboutImg/c-3.jpg";
 import Alertwindows from "../../../../componets-universal/ImageSlideshow/Alertwindows"
 
 function CactusAcresAboutPage() {
-
-  const [orientation, angle] = useScreenOrientation();
 
   return (
     
@@ -28,7 +24,7 @@ function CactusAcresAboutPage() {
         <h1 className="about-us">About us</h1>
 
           <div className="Card">
-                <p style={{ background: 'white', color: 'black' }}> orientation: {orientation} angle: {angle}</p>
+            
             <div className="card-information">
               <h1 className="title">---Lotificación</h1>
               <p className="text">

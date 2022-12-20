@@ -1,8 +1,13 @@
 import React from "react";
-import CompanyCard from "../../components/CompanyCards/CompanyCard";
 
 // Components
 import Header from "../../components/Header/Header";
+import CompanyCard from "../../components/CompanyCards/CompanyCard";
+import LogoCompanyCard from "../../components/LogoCompanyCard/LogoCompanyCard";
+
+// Images
+import CactusAcresImg1 from "../../../cactusAcres/images/catus.png";
+import CactusAcresImg2 from "../../../cactusAcres/images/catusrecortado.png";
 
 // Styles
 import "./HomePage.scss";
@@ -13,19 +18,43 @@ function HomePage() {
       <Header />
       <div className="companyCardsContainer">
         <div className="companyCardsWrapper">
-          <CompanyCard
+          <LogoCompanyCard
             pageUrl={"/cactus-acres"}
             name={"Cactus Acres"}
+            companyLogoImg={CactusAcresImg1}
+            noLogoTextColor={"#ffffff"}
+            topSectionBgColor={"#E2BB8C"}
+            // topSectionBgColor={"#1b1c1d"}
+            // invertLogoColors={true}
             isAvailable={true}
           />
-          <CompanyCard
+
+          <LogoCompanyCard
             pageUrl={"/rayos-de-sol-norte"}
             name={"Rayos De Sol Norte"}
-            isAvailable={true}
+            topSectionBgColor={"#351b64"}
+            noLogoTextColor={"#ffae00"}
+            isAvailable={false}
           />
-          <CompanyCard name={"PUESTA DE SOL"} isAvailable={true} />
-          <CompanyCard name={"Terreno de Francis Leany"} isAvailable={true} />
-          <CompanyCard name={"RAYOS DE SOL Sur"} isAvailable={false} />
+          <LogoCompanyCard
+            pageUrl={"/puesta-de-sol"}
+            name={"PUESTA DE SOL"}
+            topSectionBgColor={"#ffae00"}
+            noLogoTextColor={"#351b64"}
+            isAvailable={false}
+          />
+          <LogoCompanyCard
+            name={"Terreno de Francis Leany"}
+            topSectionBgColor={"#43AE4A"}
+            noLogoTextColor={"#000000"}
+            isAvailable={false}
+          />
+          <LogoCompanyCard
+            name={"Rayos De Sol Sur"}
+            topSectionBgColor={"#351b64"}
+            noLogoTextColor={"#ffae00"}
+            isAvailable={false}
+          />
         </div>
       </div>
     </div>
@@ -33,3 +62,20 @@ function HomePage() {
 }
 
 export default HomePage;
+
+{
+  /*
+  The order of props in the company card should be like this
+  El orden de props en el carta del company deberia der algo asi
+
+  <LogoCompanyCard
+    pageUrl={"/cactus-acres"}
+    name={"Cactus Acres"}
+    companyLogoImg={CactusAcresImg}
+    topSectionBgColor={"#1b1c1d"}
+    noLogoTextColor={"#ffae00"}
+    invertLogoColors={true}
+    isAvailable={true}
+  />
+*/
+}
