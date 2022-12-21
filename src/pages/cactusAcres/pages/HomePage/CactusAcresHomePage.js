@@ -27,10 +27,10 @@ function CactusAcresHomePage() {
       setLanguage(!language);
   }
 
-  
 
   return (
     <div className="cactusAcresHomePage">
+
       <CactusAcresNavbar />
       <div className="homePage">
           <div className="heroSection">

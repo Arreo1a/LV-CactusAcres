@@ -7,10 +7,9 @@ import ImgPlanos from "./AboutImg/Plano.jpg";
 import Img2 from "./AboutImg/c-4.jpg";
 import Img3 from "./AboutImg/c-3.jpg";
 
-import Alertwindows from "../../../../componets-universal/ImageSlideshow/Alertwindows"
 
 function CactusAcresAboutPage() {
-
+  
   return (
     
     <main className="Cactus-acres-About-page">
