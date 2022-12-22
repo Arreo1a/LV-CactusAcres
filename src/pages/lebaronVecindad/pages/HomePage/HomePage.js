@@ -50,6 +50,7 @@ function HomePage() {
             isAvailable={false}
           />
           <LogoCompanyCard
+            pageUrl={"/rayos-de-sol-sur"}
             name={"Rayos De Sol Sur"}
             topSectionBgColor={"#351b64"}
             noLogoTextColor={"#ffae00"}

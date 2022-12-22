@@ -1,0 +1,47 @@
+.RayosDeSolSurHomePage{
+    background:  #f4db88;
+    .homepage{
+        margin:0px 10px 10px 10px;
+        .main{
+            display: flex;
+           justify-content: center;
+           flex-direction: column;
+
+           @media(min-width:800px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           }
+            .content-images{
+
+               
+            }//content-images
+
+            .content-graph{
+                padding:10px 0px 10px 10px;
+                justify-content: center;
+                margin-left: 10%;
+                margin-right: 10%;
+
+            }//content-graph
+
+        }//main
+
+        .mapa-wrapper{
+           display: flex;
+           justify-content: center;
+           
+
+            .map{
+                max-width: 100%;
+            }
+        }
+
+        .footer{
+            margin:0;
+            background: rgb(53,27,100);
+            color: #ffae00;
+        }
+
+    }//homepage
+
+}//RayosDeSolSurHomePage

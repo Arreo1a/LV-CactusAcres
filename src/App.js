@@ -7,6 +7,7 @@ import PDSHomePage from "./pages/PuestaDeSol/pages/HomePage/PDSHomePage";
 import CactusAcresAboutPage from '../src/pages/cactusAcres/pages/AboutPage/CactusAcresAboutPage'
 //hace la recarga de la paguina con lazy loading
 const CactusAcresHomePage = React.lazy(()=>import("./pages/cactusAcres/pages/HomePage/CactusAcresHomePage"));
+const RayosDeSolSurHomePage = React.lazy(()=>import("./pages/rayosDeSolSur/pages/Homepage/RayosDeSolSurHomePage"));
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
           path="/rayos-de-sol-norte"
           element={<RayosDeSolNorteHomePage />}
         />
+         <Route path="/rayos-de-sol-sur" element={
+        <React.Suspense fallback="Loding...">
+          <RayosDeSolSurHomePage />
+        </React.Suspense>} />
         <Route path="/puesta-de-sol" element={<PDSHomePage />} />
        
         
