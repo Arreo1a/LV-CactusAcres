@@ -24,11 +24,8 @@ function HomePage() {
             companyLogoImg={CactusAcresImg1}
             noLogoTextColor={"#ffffff"}
             topSectionBgColor={"#E2BB8C"}
-            // topSectionBgColor={"#1b1c1d"}
-            // invertLogoColors={true}
             isAvailable={true}
           />
-
           <LogoCompanyCard
             pageUrl={"/rayos-de-sol-norte"}
             name={"Rayos De Sol Norte"}
