@@ -9,7 +9,7 @@ $hamburgerIconsMarginRight: 0px;
   z-index: 1;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   .cactusAcresNavbar {
     position: fixed;
     top: 0;
@@ -175,7 +175,7 @@ $hamburgerIconsMarginRight: 0px;
   }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
   .cactusAcresNavbar {
     position: fixed;
     top: 0;
@@ -246,24 +246,35 @@ $hamburgerIconsMarginRight: 0px;
       }
     }
 
-    .changeLanguageBtnContainer {
-      display: flex;
-      align-items: center;
+    .rightSection {
+      position: absolute;
+      right: 0;
 
-      .changeLanguageBtn {
-        background-color: transparent;
-        color: white;
+      height: 100%;
 
-        border: none;
-        border-radius: 7px;
+      margin-right: 10px;
 
-        font-size: 20px;
+      .changeLanguageBtnContainer {
+        display: flex;
+        align-items: center;
 
-        padding: 5px 10px;
-      }
+        height: 100%;
 
-      .changeLanguageBtn:hover {
-        background-color: #2a2a2c;
+        .changeLanguageBtn {
+          background-color: transparent;
+          color: white;
+
+          border: none;
+          border-radius: 7px;
+
+          font-size: 20px;
+
+          padding: 5px 10px;
+        }
+
+        .changeLanguageBtn:hover {
+          background-color: #2a2a2c;
+        }
       }
     }
 

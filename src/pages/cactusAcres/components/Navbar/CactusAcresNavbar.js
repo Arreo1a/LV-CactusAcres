@@ -39,12 +39,14 @@ function CactusAcresNavbar(props) {
             </Link>
           </div>
         </div>
-        <div className="changeLanguageBtnContainer">
-          <ChangeLanguageBtn
-            currentLanguage={props.currentLanguage}
-            changeToEnglish={props.changeToEnglish}
-            changeToSpanish={props.changeToSpanish}
-          />
+        <div className="rightSection">
+          <div className="changeLanguageBtnContainer">
+            <ChangeLanguageBtn
+              currentLanguage={props.currentLanguage}
+              changeToEnglish={props.changeToEnglish}
+              changeToSpanish={props.changeToSpanish}
+            />
+          </div>
         </div>
         <div className="hamburgerContainer">
           {open ? (

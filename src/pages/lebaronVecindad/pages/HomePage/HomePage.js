@@ -47,6 +47,7 @@ function HomePage() {
             isAvailable={false}
           />
           <LogoCompanyCard
+            pageUrl={"/rayos-de-sol-sur"}
             name={"Rayos De Sol Sur"}
             topSectionBgColor={"#351b64"}
             noLogoTextColor={"#ffae00"}
@@ -59,6 +60,23 @@ function HomePage() {
 }
 
 export default HomePage;
+
+{
+  /*
+  The order of props in the company card should be like this
+  El orden de props en el carta del company deberia der algo asi
+
+  <LogoCompanyCard
+    pageUrl={"/cactus-acres"}
+    name={"Cactus Acres"}
+    companyLogoImg={CactusAcresImg}
+    topSectionBgColor={"#1b1c1d"}
+    noLogoTextColor={"#ffae00"}
+    invertLogoColors={true}
+    isAvailable={true}
+  />
+*/
+}
 
 {
   /*
