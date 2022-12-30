@@ -1,5 +1,14 @@
 {
   "title": " Vive en la exclusividad de una zona pensada en ti.",
 
-  "contact-us": "Contactanos"
+  "contact-us": "Contactanos",
+
+  "infoCard-title-accessControl": "Control de Acceso",
+  "infoCard-description-accessControl": "Diseño de caseta único que te da la bienvenida a tu hogar, mientras se encarga de mantener tu entorno controlado",
+
+  "infoCard-title-security": "Seguridad",
+  "infoCard-description-security": "Cuidan de ti y tu patrimonio, para que te olvides de preocupaciones.",
+
+  "infoCard-title-undergroundInstalations": "Instalaciones subterráneas",
+  "infoCard-description-undergroundInstalations": "Te permiten disfrutar de todo lo que te rodea."
 }

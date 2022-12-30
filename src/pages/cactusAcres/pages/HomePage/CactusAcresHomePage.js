@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -24,6 +26,7 @@ function CactusAcresHomePage() {
     i18n.changeLanguage("en");
     setLanguage(!language);
   };
+
   const changeToSpanish = () => {
     i18n.changeLanguage("es");
     setLanguage(!language);
@@ -75,20 +78,16 @@ function CactusAcresHomePage() {
         <div className="allInfoCards">
           <div className="wrapAllInfoCards">
             <InfoCards
-              title={"Control de Acceso"}
-              description={
-                "Diseño de caseta único que te da la bienvenida a tu hogar, mientras se encarga de mantener tu entorno controlado"
-              }
+              title={t("infoCard-title-accessControl")}
+              description={t("infoCard-description-accessControl")}
             />
             <InfoCards
-              title={"Seguridad"}
-              description={
-                "cuidan de ti y tu patrimonio, para que te olvides de preocupaciones."
-              }
+              title={t("infoCard-title-security")}
+              description={t("infoCard-description-security")}
             />
             <InfoCards
-              title={"Instalaciones subterráneas"}
-              description={"Te permiten disfrutar de todo lo que te rodea."}
+              title={t("infoCard-title-undergroundInstalations")}
+              description={t("infoCard-description-undergroundInstalations")}
             />
             {/* <InfoCards
               title={"Privacidad"}
@@ -116,6 +115,9 @@ function CactusAcresHomePage() {
               } 
             />
             */}
+            <Link to="/cactus-acres/about" className="seeMoreBtn">
+              <div className="seeMoreText">See More...</div>
+            </Link>
           </div>
         </div>
 

@@ -7,13 +7,22 @@ $headerHeight: 50px;
   justify-content: center;
   align-items: center;
 
+  background-image: linear-gradient(
+    to right,
+    rgb(12, 12, 12),
+    $mainColor,
+    $mainColor,
+    $mainColor,
+    rgb(12, 12, 12)
+  );
   background-color: $mainColor;
+
   color: $white;
 
   height: $headerHeight;
 
   .titleText {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 300;
   }
 }

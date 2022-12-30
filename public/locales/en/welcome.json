@@ -1,5 +1,14 @@
 {
   "title": "Live in the exclusivity of an area designed for you.",
 
-  "contact-us": "Contact us"
+  "contact-us": "Contact us",
+
+  "infoCard-title-accessControl": "Access Control",
+  "infoCard-description-accessControl": "Unique kennel design that welcomes you into your home, while taking care of keeping your environment in check",
+
+  "infoCard-title-security": "Security",
+  "infoCard-description-security": "They take care of you and your heritage, so that you forget about worries.",
+
+  "infoCard-title-undergroundInstalations": "Underground Installations",
+  "infoCard-description-undergroundInstalations": "They allow you to enjoy everything around you."
 }

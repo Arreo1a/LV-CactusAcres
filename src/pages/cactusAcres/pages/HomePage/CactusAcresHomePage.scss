@@ -58,7 +58,7 @@ $mediaScreenWidth: 900px;
 
     .heroSectionLargeScreen {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: 1fr 1fr;
       padding: 10px 10px;
 
       .titleSection {
@@ -112,6 +112,21 @@ $mediaScreenWidth: 900px;
       .wrapAllInfoCards {
         display: flex;
         flex-wrap: wrap;
+
+        .seeMoreBtn {
+          text-align: center;
+
+          width: 100%;
+
+          margin-top: 5px;
+
+          .seeMoreText {
+            font-size: 20px;
+
+            color: black;
+            text-decoration: underline;
+          }
+        }
       }
     }
 

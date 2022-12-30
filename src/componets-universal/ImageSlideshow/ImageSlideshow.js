@@ -1,8 +1,15 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAnglesRight, faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnglesRight,
+  faAnglesLeft,
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
+
+import "./ImageSlideshow.scss";
 
 library.add(faAnglesRight, faAnglesLeft);
 
@@ -74,11 +81,11 @@ const ImageSlideshow = (props) => {
 
       <SlideshowButton>
         <Button onClick={previous} className="btn btn-left">
-          <FontAwesomeIcon icon={faAnglesLeft} />
+          <FontAwesomeIcon icon={faChevronLeft} className="nextAndBackArrow" />
         </Button>
 
         <Button right onClick={next}>
-          <FontAwesomeIcon icon={faAnglesRight} />
+          <FontAwesomeIcon icon={faChevronRight} className="nextAndBackArrow" />
         </Button>
       </SlideshowButton>
     </SlideshowContainer>

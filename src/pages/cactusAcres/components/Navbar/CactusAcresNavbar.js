@@ -20,11 +20,15 @@ function CactusAcresNavbar(props) {
   return (
     <>
       <div className="cactusAcresNavbar">
-        <Link to="/cactus-acres" className="logoContainer">
+        <div className="logoContainer">
           <img src={CactusLogo} alt="" className="logoImg" />
-        </Link>
+        </div>
         <div className="textContainer">
-          <div className="titleText">Cactus Acres</div>
+          <div className="titleTextMobile">CACTUS ACRES</div>
+          <div className="titleTextLargeScreen">
+            <div className="titleTextPiece textPiece-cactus">CACTUS</div>
+            <div className="titleTextPiece textPiece-acres">ACRES</div>
+          </div>
         </div>
         <div className="linksContainer">
           <div className="allLinks">

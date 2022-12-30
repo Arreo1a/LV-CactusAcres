@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Montserrat:ital@1&display=swap");
+
 @import "../../ColorLibrary.scss";
 
 .Cactus-acres-About-page {
@@ -10,6 +11,7 @@
     padding-top: 0;
     z-index: 1;
   }
+
   .AboutPage {
     font-family: "Montserrat", sans-serif;
 
@@ -24,52 +26,163 @@
 
       .about-us {
         font-family: "Abril Fatface", cursive;
-        font-size: 3em;
-        background: $mainColor;
+        font-size: 2.5em;
+
         color: black;
 
         @media (min-width: 768px) {
-          font-size: 4em;
-        } //media
-      } //about-us
+          font-size: 3em;
+          text-align: center;
+        }
+      }
 
-      .Card {
-        @media (min-width: 768px) {
+      .informationSection {
+        display: flex;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        .cardContainer-mobile {
           display: grid;
-          grid-template-columns: 1fr;
-          justify-content: center;
-          margin: 0 25%;
-          margin-bottom: 20px;
-        } //media
-        .card-information {
-          .title {
-            background: $mainColor;
-            height: 10%;
-            border-radius: 5px;
-            align-items: center;
-            @media (min-width: 768px) {
-              height: 15%;
-            } //media
-          } //title
 
-          .text {
-            background: rgb(247, 244, 244);
-            text-align: start;
-            margin: 5px 5px;
-            @media (min-width: 768px) {
-            } //media
-          } //text
+          margin-bottom: 10px;
 
-          .images {
-            .Img {
-              justify-content: center;
+          .infoSection {
+            border-left: 1px solid $greyBorder;
+            border-bottom: 1px solid $greyBorder;
+
+            border-bottom-left-radius: 7px;
+
+            .titleText {
+              font-size: 22px;
+
+              margin-left: 5px;
+
+              margin: 0px 5px 5px 5px;
+            }
+
+            .descriptionText {
+              margin: 0px 5px 5px 5px;
+            }
+          }
+
+          .imageContainer {
+            .infoImage {
               width: 100%;
-              height: 300px;
-              margin-bottom: 20px;
-            } //Img
-          } //images
-        } //card-information
-      } //Card
+            }
+          }
+        }
+
+        .cardContainer-1 {
+          display: none;
+        }
+
+        .cardContainer-2 {
+          display: none;
+        }
+
+        @media (min-width: 768px) {
+          .cardContainer-mobile {
+            display: none;
+          }
+
+          .cardContainer-1 {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            margin-bottom: 30px;
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            .infoSection {
+              border-right: 1px solid $greyBorder;
+              border-bottom: 1px solid $greyBorder;
+
+              border-bottom-right-radius: 7px;
+
+              .titleText {
+                font-size: 35px;
+
+                margin-left: 5px;
+
+                margin: 0px 5px 5px 5px;
+
+                @media (max-width: 960px) {
+                  font-size: 28px;
+                }
+              }
+
+              .descriptionText {
+                font-size: 20px;
+
+                margin: 0px 5px 5px 5px;
+
+                @media (max-width: 960px) {
+                  font-size: 18px;
+                }
+              }
+            }
+
+            .imageContainer {
+              .infoImage {
+                width: 100%;
+              }
+            }
+          }
+
+          .cardContainer-2 {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            margin-bottom: 30px;
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            .infoSection {
+              border-left: 1px solid $greyBorder;
+              border-bottom: 1px solid $greyBorder;
+
+              border-bottom-left-radius: 7px;
+
+              .titleText {
+                font-size: 35px;
+
+                margin-left: 5px;
+
+                margin: 0px 5px 5px 5px;
+
+                @media (max-width: 960px) {
+                  font-size: 30px;
+                }
+              }
+
+              .descriptionText {
+                font-size: 20px;
+
+                margin: 0px 5px 5px 5px;
+
+                @media (max-width: 960px) {
+                  font-size: 18px;
+                }
+              }
+            }
+
+            .imageContainer {
+              .infoImage {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      /* ___________________________________ */
     } //hero-section-about
   } //AboutPage
 } //Cactus-acres-About-page
