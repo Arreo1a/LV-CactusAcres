@@ -9,67 +9,71 @@ $logoImgHeight: $cardHeight/2 - 10px;
 
 $availableTextSize: 25px;
 
-// .cardContainer {
-.logoCompanyCard {
-  background-color: $offWhite;
-  border: 1px solid rgb(228, 228, 228);
+.companyCardContainer {
+  display: flex;
+  justify-content: center;
 
-  height: $cardHeight;
-  width: $cardWidth;
+  .logoCompanyCard {
+    background-color: $offWhite;
+    border: 1px solid rgb(228, 228, 228);
 
-  border-radius: 7px;
+    height: $cardHeight;
+    width: $cardWidth;
 
-  text-decoration: none;
+    border-radius: 7px;
 
-  margin: 5px;
+    text-decoration: none;
 
-  .topSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 5px;
 
-    border-radius: 7px 7px 0px 0px;
+    .topSection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    height: $cardHeight / 2;
+      border-radius: 7px 7px 0px 0px;
 
-    .companyLogoImg {
-      height: $logoImgHeight;
+      height: $cardHeight / 2;
+
+      .companyLogoImg {
+        height: $logoImgHeight;
+      }
+
+      .invertedCompanyLogoImg {
+        height: $logoImgHeight;
+        filter: invert(1);
+      }
+
+      .noLogoNameOfCompanyText {
+        font-size: 25px;
+      }
     }
 
-    .invertedCompanyLogoImg {
-      height: $logoImgHeight;
-      filter: invert(1);
-    }
+    .bottomSection {
+      .companyName {
+        font-size: 30px;
+        font-weight: 500;
 
-    .noLogoNameOfCompanyText {
-      font-size: 25px;
-    }
-  }
+        color: $black;
 
-  .bottomSection {
-    .companyName {
-      font-size: 30px;
-      font-weight: 500;
+        margin-left: 5px;
+      }
 
-      color: $black;
+      .isAvailableText {
+        font-size: $availableTextSize;
+        font-weight: 400;
 
-      margin-left: 5px;
-    }
+        color: $secondaryColor;
 
-    .isAvailableText {
-      font-size: $availableTextSize;
-      font-weight: 400;
+        margin-left: 5px;
+      }
+      .notAvailableText {
+        font-size: $availableTextSize;
+        font-weight: 400;
 
-      color: $secondaryColor;
-
-      margin-left: 5px;
-    }
-    .notAvailableText {
-      font-size: $availableTextSize;
-      font-weight: 400;
-
-      color: rgb(197, 38, 38);
-      margin-left: 5px;
+        color: rgb(197, 38, 38);
+        margin-left: 5px;
+      }
     }
   }
 }

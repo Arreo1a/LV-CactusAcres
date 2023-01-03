@@ -115,9 +115,11 @@ function CactusAcresHomePage() {
               } 
             />
             */}
-            <Link to="/cactus-acres/about" className="seeMoreBtn">
-              <div className="seeMoreText">See More...</div>
-            </Link>
+            <div className="seeMoreBtn">
+              <Link to="/cactus-acres/about" className="seeMoreText">
+                See More...
+              </Link>
+            </div>
           </div>
         </div>
 

@@ -39,8 +39,8 @@ function CactusAcresAboutPage() {
       </div>
       <div className="AboutPage">
         <div className="hero-section-about">
-          <h1 className="about-us">About us</h1>
-
+          <div className="about-us">About us</div>
+          <hr />
           <div className="informationSection">
             {/* _________________Computer Cards Start__________________ */}
             <div className="cardContainer-mobile">

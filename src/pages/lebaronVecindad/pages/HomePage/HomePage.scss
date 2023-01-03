@@ -1,15 +1,28 @@
 .homePage {
+  // .companyCardsContainer {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   .companyCardsWrapper {
+  //     display: flex;
+  //     flex-wrap: wrap;
+
+  //     justify-content: center;
+
+  //     width: 95%;
+  //   }
+  // }
+
   .companyCardsContainer {
     display: flex;
     justify-content: center;
 
     .companyCardsWrapper {
-      display: flex;
-      flex-wrap: wrap;
-
-      justify-content: center;
-
       width: 95%;
+
+      display: grid;
+      grid-gap: 0.5em;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
   }
 }
