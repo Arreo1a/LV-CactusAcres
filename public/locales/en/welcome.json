@@ -1,7 +1,12 @@
 {
   "title": "Live in the exclusivity of an area designed for you.",
 
+  "home": "Home",
+  "aboutUs": "About Us",
+  "contact": "Contact",
+
   "contact-us": "Contact us",
+  "seeMore": "See More...",
 
   "infoCard-title-accessControl": "Access Control",
   "infoCard-description-accessControl": "Unique kennel design that welcomes you into your home, while taking care of keeping your environment in check",
@@ -10,5 +15,16 @@
   "infoCard-description-security": "They take care of you and your heritage, so that you forget about worries.",
 
   "infoCard-title-undergroundInstalations": "Underground Installations",
-  "infoCard-description-undergroundInstalations": "They allow you to enjoy everything around you."
+  "infoCard-description-undergroundInstalations": "They allow you to enjoy everything around you.",
+
+  "about-infoCard-title-heritage": "A heritage that lasts forever is the best investment",
+  "about-infoCard-description-heritage": "Cactus Accres subdivision is designed for the comfort of today's life, with safe installations that provide greater security for you and your entire family.",
+
+  "about-infoCard-title-location": "Location description",
+  "about-infoCard-description-location": "Counting with easy access, located in Colonia Lebaron, so that you are close to everything you need, from shopping malls, schools, restaurants, Medical Center, you can enjoy the tranquility of Colonia Lebaron.",
+
+  "about-infoCard-title-subdivision": "Subdivision",
+  "about-infoCard-description-subdivision": "Our subdivision is designed for your well-being, with a variety of lots that adapt to your needs and that offer you the opportunity to be part of a community with which you identify in a place where you can grow.",
+
+  "about-infoCard-title-securityAndAccessBooth": "Perimeter security and access booth"
 }

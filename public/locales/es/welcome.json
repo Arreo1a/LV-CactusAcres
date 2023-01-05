@@ -1,7 +1,12 @@
 {
   "title": " Vive en la exclusividad de una zona pensada en ti.",
 
+  "home": "Inicio",
+  "aboutUs": "Sobre Nosotros",
+  "contact": "Contacto",
+
   "contact-us": "Contactanos",
+  "seeMore": "Ver Mas",
 
   "infoCard-title-accessControl": "Control de Acceso",
   "infoCard-description-accessControl": "Diseño de caseta único que te da la bienvenida a tu hogar, mientras se encarga de mantener tu entorno controlado",
@@ -10,5 +15,16 @@
   "infoCard-description-security": "Cuidan de ti y tu patrimonio, para que te olvides de preocupaciones.",
 
   "infoCard-title-undergroundInstalations": "Instalaciones subterráneas",
-  "infoCard-description-undergroundInstalations": "Te permiten disfrutar de todo lo que te rodea."
+  "infoCard-description-undergroundInstalations": "Te permiten disfrutar de todo lo que te rodea.",
+
+  "about-infoCard-title-heritage": "Un patrimonio que dura para siempre es la mejor inversión",
+  "about-infoCard-description-heritage": "fraccionamiento Cactus Accres está pensado para la comodidad de la vida actual, contando con istalacion seguras que te brindan una mayor Seguridad a ti y toda tu familia.",
+
+  "about-infoCard-title-location": "Descripción de la ubicación",
+  "about-infoCard-description-location": "Contando con fácil acceso, ubicado en Colonia Lebaron, para que estés cerca de todo lo que necesitas, desde plazas comerciales, colegios, restaurantes, Centro Médico, podrás disfrutar de la tranquilidad de Colonia Lebaron.",
+
+  "about-infoCard-title-subdivision": "Lotificación",
+  "about-infoCard-description-subdivision": "Nuestro fraccionamiento esta diseñado para tu bienestar, con una variedad de lotes que se adaptan a tus necesidades y que te ofrecen la oportunidad de ser parte de una comunidad con la que te identifiques en un lugar donde puedes crecer.",
+
+  "about-infoCard-title-securityAndAccessBooth": "Seguridad perimitral y caseta de acceso"
 }

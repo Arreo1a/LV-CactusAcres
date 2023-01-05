@@ -117,7 +117,7 @@ function CactusAcresHomePage() {
             */}
             <div className="seeMoreBtn">
               <Link to="/cactus-acres/about" className="seeMoreText">
-                See More...
+                {t("seeMore")}
               </Link>
             </div>
           </div>

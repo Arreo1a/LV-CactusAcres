@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,6 +18,19 @@ import CactusLogo from "../../images/catusrecortado.png";
 function CactusAcresNavbar(props) {
   const [open, setOpen] = useState(false);
 
+  const [language, setLanguage] = useState(false);
+
+  const [t, i18n] = useTranslation(["welcome"]);
+
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+    setLanguage(!language);
+  };
+  const changeToSpanish = () => {
+    i18n.changeLanguage("es");
+    setLanguage(!language);
+  };
+
   return (
     <>
       <div className="cactusAcresNavbar">
@@ -33,13 +47,13 @@ function CactusAcresNavbar(props) {
         <div className="linksContainer">
           <div className="allLinks">
             <Link to="/cactus-acres" className="headerLink">
-              <div className="linkText">Home</div>
+              <div className="linkText">{t("home")}</div>
             </Link>
             <Link to="/cactus-acres/about" className="headerLink">
-              <div className="linkText">About</div>
+              <div className="linkText">{t("aboutUs")}</div>
             </Link>
             <Link to="/cactus-acres/contact" className="headerLink">
-              <div className="linkText">Contact</div>
+              <div className="linkText">{t("contact")}</div>
             </Link>
           </div>
         </div>
