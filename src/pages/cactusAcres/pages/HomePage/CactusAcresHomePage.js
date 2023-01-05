@@ -63,9 +63,11 @@ function CactusAcresHomePage() {
               <div className="titleText">{t("title")}</div>
             </div>
             <div className="contactBtnContainer">
-              <button className="btn-contact">
-                {t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} />
-              </button>
+              <Link to="/cactus-acres/contact">
+                <button className="btn-contact">
+                  {t("contact-us")} <FontAwesomeIcon icon={faPaperPlane} />
+                </button>
+              </Link>
             </div>
           </div>
           <div className="slideshowContainer">
