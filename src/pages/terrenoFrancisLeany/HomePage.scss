@@ -1,38 +1,126 @@
-
 .container {
-    background-color: white;
+  background: rgb(0, 4, 40);
+  background: -webkit-linear-gradient(to right, rgb(0, 78, 146), rgb(0, 4, 40));
+  background: linear-gradient(to right, rgb(0, 78, 146), rgb(0, 4, 40));
+
+  border-style: inset;
+  margin: 0;
+}
+.header {
+  border-radius: 5px;
+
+  position: relative;
+  top: 2px;
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 3px 3px 3px pink;
+  position: sticky;
+  transition: 0.7s;
+  padding: 5px 5px;
+}
+
+.main {
+  margin: 200px;
+}
+.imagenes {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .img-container {
+    .imagen {
+      margin: 5px;
+      height: 200px;
+      width: 250px;
+    }
+  }
+}
+
+.imagen:hover {
+  transform: scale(1.5);
+  position: relative;
+  transition: all 300ms;
+}
+.container2 {
+  display: flex;
+  justify-content: left;
+}
+.precio {
+  justify-content: left;
+  text-shadow: 3px 3px 3px pink;
+
+  color: white;
+  font-size: 40px;
+  display: flex;
+}
+
+.icon-whatsapp {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  right: 30px;
+  bottom: 520px;
+  position: fixed;
+}
+.icon-whatsapp:hover {
+  transform: scale(1.1);
+}
+.icon-map {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  right: 35px;
+  bottom: 470px;
+  position: fixed;
+}
+.icon-map:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+
     border-style: inset;
-    // border-color: green;
     margin: 0;
-    background-image: url(../../images/cactus.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .header {
     border-radius: 5px;
-  
+
     position: relative;
     top: 2px;
     width: 100%;
-    background-color: black;
+    background-color: orange;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     text-shadow: 3px 3px 3px pink;
-    position: fixed;
+    position: sticky;
     transition: 0.7s;
     padding: 5px 5px;
   }
-  
+
   .main {
-    display: flex;
-    justify-content: left;
-    margin: 8px;
+    margin: 10px;
   }
   .imagenes {
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     .img-container {
+      flex-direction: row;
+
       .imagen {
         margin: 5px;
         height: 200px;
@@ -40,128 +128,32 @@
       }
     }
   }
-  
+
   .imagen:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     position: relative;
     transition: all 300ms;
   }
   .container2 {
-    background-color: black;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
+    display: flex;
+    justify-content: left;
+
   }
   .precio {
     justify-content: left;
-    font-size: 30px;
-    color: white;
-    font-size: 40px;
-    display: flex;
+  text-shadow: 3px 3px 3px pink;
   }
-  
+
   .icon-whatsapp {
-    position: relative;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    right: 30px;
-    bottom: 540px;
-    position: fixed;
+ bottom: 10px;
+ 
+   
   }
-  .icon-whatsapp:hover {
-    transform: scale(1.1);
-  }
+
   .icon-map {
-    position: relative;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    right: 35px;
-    bottom: 490px;
-    position: fixed;
+  
+  bottom: 60px;
+   
+
   }
-  .icon-map:hover {
-    transform: scale(1.1);
-  }
-  
-  @media only screen and (max-width: 900px) {
-    .container {
-      background-color: white;
-      border-style: inset;
-      // border-color: green;
-      margin: 0;
-      background-image: url(../../images/cactus.jpg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .header {
-      border-radius: 5px;
-  
-      position: relative;
-      top: 2px;
-      width: 100%;
-      background-color: black;
-      color: white;
-      font-size: 35px;
-      text-align: center;
-      text-shadow: 3px 3px 3px pink;
-      position: fixed;
-      transition: 0.7s;
-      padding: 5px 5px;
-    }
-  
-    .main {
-      display: flex;
-      justify-content: center;
-      margin: 8px;
-    }
-    .imagenes {
-      margin: 5px;
-      .img-container {
-        .imagen {
-          margin: 5px;
-          height: 200px;
-          width: 250px;
-        }
-      }
-    }
-  
-    .imagen:hover {
-      transform: scale(1.2);
-      position: relative;
-      transition: all 300ms;
-    }
-    .container2 {
-      background-color: black;
-      border-radius: 5px;
-      position: relative;
-      top: 10px;
-    }
-    .precio {
-      justify-content: left;
-      font-size: 30px;
-      color: white;
-      font-size: 40px;
-      display: flex;
-    }
-  
-    .icon-whatsapp {
-      position: relative;
-      font-size: 40px;
-      display: flex;
-      justify-content: center;
-      right: 10px;
-      bottom: 610px;
-    }
-  
-    .icon-map {
-      position: relative;
-      font-size: 40px;
-      display: flex;
-      justify-content: center;
-      right: 15px;
-      bottom: 555px;
-    }
-  }
+}
