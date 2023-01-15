@@ -1,5 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkedAlt,
@@ -7,10 +9,12 @@ import {
   faEnvelope,
   faCircleArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faWhatsapp,
   faFacebookMessenger,
 } from "@fortawesome/free-brands-svg-icons";
+
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
@@ -22,6 +26,20 @@ import CactusAcresLogo from "../../images/c-1.jpg";
 import "./ContactPage.scss";
 
 const ContactPage = () => {
+  const [language, setLanguage] = useState(false);
+
+  const [t, i18n] = useTranslation(["welcome"]);
+
+  const changeToEnglish = () => {
+    i18n.changeLanguage("en");
+    setLanguage(!language);
+  };
+
+  const changeToSpanish = () => {
+    i18n.changeLanguage("es");
+    setLanguage(!language);
+  };
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -63,16 +81,16 @@ const ContactPage = () => {
   return (
     <>
       <CactusAcresNavbar
-      // currentLanguage={language}
-      // changeToEnglish={changeToEnglish}
-      // changeToSpanish={changeToSpanish}
+        currentLanguage={language}
+        changeToEnglish={changeToEnglish}
+        changeToSpanish={changeToSpanish}
       />
 
       <div className="contactPage">
         <div className="contactCard">
           <div className="topSectionContainer">
             <div className="titleContainer">
-              <span className="titleText">Get In Touch</span>
+              <span className="titleText">{t("contact-title-text")}</span>
               <span className="infoPieceContainer">
                 <a
                   href="https://goo.gl/maps/nCr7aJTuT1vhmF8n6"
@@ -134,7 +152,7 @@ const ContactPage = () => {
           <div className="iconsSection">
             <p className="alsoReachUsHereText">You can also reach us here</p>
             <div className="iconsContainer">
-              <div className="icon-whatsapp">
+              <div className="iconWhatsapp">
                 <a
                   href="https://api.whatsapp.com/send?phone=525555555555"
                   target="_blank"
@@ -143,7 +161,7 @@ const ContactPage = () => {
                   <FontAwesomeIcon icon={faWhatsapp} />
                 </a>
               </div>
-              <div className="icon-messenger">
+              <div className="iconMessenger">
                 <a
                   href="https://m.me/josemiguel.islasvaldez"
                   target="_blank"
@@ -164,7 +182,7 @@ const ContactPage = () => {
           </div>
           <div className="rightSide">
             <div className="topSectionContainer">
-              <div className="titleText">Get In Touch</div>
+              <div className="titleText">{t("contact-title-text")}</div>
               <span className="reachUsText">
                 You can reach us anytime via{" "}
                 <span className="emailText">cactus-acres@gmail.com</span>

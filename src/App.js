@@ -11,6 +11,7 @@ import RayosDeSolNorteHomePage from "./pages/rayosDeSolNorte/pages/HomePage/Rayo
 import PDSHomePage from "./pages/PuestaDeSol/pages/HomePage/PDSHomePage";
 import CactusAcresAboutPage from "../src/pages/cactusAcres/pages/AboutPage/CactusAcresAboutPage";
 import ContactPage from "./pages/cactusAcres/pages/ContactPage/ContactPage";
+import TFLHomePage from "./pages/terrenoFrancisLeany/HomePage";
 
 //hace la recarga de la paguina con lazy loading
 const CactusAcresHomePage = React.lazy(() =>
@@ -49,8 +50,7 @@ function App() {
           }
         />
         <Route path="/puesta-de-sol" element={<PDSHomePage />} />
-
-        <Route path="/puesta-de-sol" element={<PDSHomePage />} />
+        <Route path="/terreno-francis-leany" element={<TFLHomePage />} />
       </Routes>
     </Router>
   );

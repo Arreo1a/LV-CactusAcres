@@ -4,6 +4,10 @@
   "home": "Home",
   "aboutUs": "About Us",
   "contact": "Contact",
+  "name": "Name",
+  "yourName": "Your Name",
+  "email": "Email",
+  "message": "Message",
 
   "contact-us": "Contact us",
   "seeMore": "See More...",
@@ -26,5 +30,8 @@
   "about-infoCard-title-subdivision": "Subdivision",
   "about-infoCard-description-subdivision": "Our subdivision is designed for your well-being, with a variety of lots that adapt to your needs and that offer you the opportunity to be part of a community with which you identify in a place where you can grow.",
 
-  "about-infoCard-title-securityAndAccessBooth": "Perimeter security and access booth"
+  "about-infoCard-title-securityAndAccessBooth": "Perimeter security and access booth",
+
+  "contact-title-text": "Get In Touch",
+  "contact-reachUs-text": "You can reach us anytime via"
 }

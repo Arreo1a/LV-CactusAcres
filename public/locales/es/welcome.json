@@ -4,6 +4,10 @@
   "home": "Inicio",
   "aboutUs": "Sobre Nosotros",
   "contact": "Contacto",
+  "name": "Nombre",
+  "yourName": "Tu Nombre",
+  "email": "Correo Electrónico",
+  "message": "Mensaje",
 
   "contact-us": "Contactanos",
   "seeMore": "Ver Mas",
@@ -26,5 +30,8 @@
   "about-infoCard-title-subdivision": "Lotificación",
   "about-infoCard-description-subdivision": "Nuestro fraccionamiento esta diseñado para tu bienestar, con una variedad de lotes que se adaptan a tus necesidades y que te ofrecen la oportunidad de ser parte de una comunidad con la que te identifiques en un lugar donde puedes crecer.",
 
-  "about-infoCard-title-securityAndAccessBooth": "Seguridad perimitral y caseta de acceso"
+  "about-infoCard-title-securityAndAccessBooth": "Seguridad perimitral y caseta de acceso",
+
+  "contact-title-text": "Ponerse en contacto",
+  "contact-reachUs-text": "Puedes alcanzarnos en cualquier momento a través de"
 }

@@ -25,6 +25,7 @@ function HomePage() {
             noLogoTextColor={"#ffffff"}
             topSectionBgColor={"#E2BB8C"}
             isAvailable={true}
+            isSeparatePage={true}
           />
           <LogoCompanyCard
             pageUrl={"/rayos-de-sol-norte"}
@@ -41,6 +42,7 @@ function HomePage() {
             isAvailable={false}
           />
           <LogoCompanyCard
+            pageUrl={"/terreno-francis-leany"}
             name={"Terreno de Francis Leany"}
             topSectionBgColor={"#43AE4A"}
             noLogoTextColor={"#000000"}
@@ -74,6 +76,7 @@ export default HomePage;
     noLogoTextColor={"#ffae00"}
     invertLogoColors={true}
     isAvailable={true}
+    isSeparatePage={true}
   />
 */
 }

@@ -4,7 +4,7 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="lebaronVecindadHeader">
       <div className="titleText">LEBARON NEIGHBORHOODS</div>
     </div>
   );
