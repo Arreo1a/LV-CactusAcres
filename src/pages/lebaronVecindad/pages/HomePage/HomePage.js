@@ -6,8 +6,7 @@ import CompanyCard from "../../components/CompanyCards/CompanyCard";
 import LogoCompanyCard from "../../components/LogoCompanyCard/LogoCompanyCard";
 
 // Images
-import CactusAcresImg1 from "../../../cactusAcres/images/catus.png";
-import CactusAcresImg2 from "../../../cactusAcres/images/catusrecortado.png";
+import CactusAcresImg1 from "../../../../images/catus.png";
 
 // Styles
 import "./HomePage.scss";
@@ -19,7 +18,7 @@ function HomePage() {
       <div className="companyCardsContainer">
         <div className="companyCardsWrapper">
           <LogoCompanyCard
-            pageUrl={"/cactus-acres"}
+            pageUrl={"http://localhost:3001/"}
             name={"Cactus Acres"}
             companyLogoImg={CactusAcresImg1}
             noLogoTextColor={"#ffffff"}
