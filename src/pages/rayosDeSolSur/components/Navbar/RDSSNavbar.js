@@ -5,16 +5,14 @@ import { Link } from "react-router-dom";
 import "./RDSSNavbar.scss";
 
 //fontawesoem
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleChevronLeft} from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faCircleChevronLeft)
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 function RDSNNavbar() {
   return (
     <div className="RDSNNavbar">
       <Link to="/" className="backButton">
-        {<FontAwesomeIcon icon={ faCircleChevronLeft} />}
+        <FontAwesomeIcon icon={faChevronLeft} />
       </Link>
       <div className="titleTextContainer">
         <div className="titleText">Rayos De Sol Sur</div>
@@ -24,4 +22,3 @@ function RDSNNavbar() {
 }
 
 export default RDSNNavbar;
- 

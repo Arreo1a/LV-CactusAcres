@@ -38,12 +38,11 @@ function RayosDeSolSurHomePage() {
       </div>
       <div className="footer">
         <div className="Description">
-          <p>
+          <div>
             Rayos del sol es un vecindad Familiar en el Col. LeBaron de 29
-            lotes. <br />
-            Listo con Agua Y Camino: Primavera 2020
-            <br />
-          </p>
+            lotes.
+          </div>
+          <div>Listo con Agua Y Camino: Primavera 2020</div>
         </div>
       </div>
     </div>

@@ -1,15 +1,27 @@
 import React from "react";
-import "./HomePage.scss";
+import { Link } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
 import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import map from "./images/map.jpg";
 // import { Icon } from "@iconify/react";
 
+import "./HomePage.scss";
+
 function TFLHomePage() {
   return (
     <div className="terrenoFrancisLeany">
-      <div className="header">Terreno de Francis Leany</div>
+      <div className="header">
+        <Link to="/" className="backButton">
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </Link>
+        <div className="titleTextContainer">Terreno de Francis Leany</div>
+      </div>
 
       <div className="main">
         <div className="imagenes">
