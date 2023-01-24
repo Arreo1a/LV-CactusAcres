@@ -1,64 +1,62 @@
-.container {
+$main-color: #7111ba;
+$main-text-color: #fef7ff;
+
+.terrenoFrancisLeany {
   background-color: white;
-  border-style: inset;
-  // border-color: green;
-  margin: 0;
-  // background-image: url(../../images/cactus.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .header {
-    border-radius: 5px;
+    // position: fixed;
 
-    position: relative;
-    top: 2px;
-    width: 100%;
-    background-color: black;
-    color: white;
+    background-color: $main-color;
+    color: $main-text-color;
+    // text-shadow: 3px 3px 3px pink;
+
+    top: 0px;
+
+    width: 100vw;
+    height: 50px;
+
     font-size: 35px;
     text-align: center;
-    text-shadow: 3px 3px 3px pink;
-    position: fixed;
-    transition: 0.7s;
-    padding: 5px 5px;
   }
 
   .main {
     display: flex;
-    justify-content: left;
-    margin: 8px;
+    justify-content: center;
+    // margin: 8px;
 
     .imagenes {
-      margin: 5px;
+      display: flex;
+
       .img-container {
+        margin: 5px;
+
         .imagen {
-          margin: 5px;
-          height: 200px;
-          width: 250px;
+          height: 400px;
+          width: 500px;
         }
 
         .imagen:hover {
-          transform: scale(1.5);
+          transform: scale(1.1);
           position: relative;
-          transition: all 300ms;
+          transition: all 300ms ease-in-out;
         }
       }
     }
   }
 
   .container2 {
-    background-color: black;
-    border-radius: 5px;
-    position: relative;
-    top: 10px;
-
+    display: flex;
+    justify-content: center;
     .precio {
-      justify-content: left;
-      font-size: 30px;
-      color: white;
+      text-align: center;
+
+      background-color: $main-color;
+      color: $main-text-color;
+
+      width: 100%;
+
       font-size: 40px;
-      display: flex;
     }
   }
 
@@ -91,66 +89,63 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .container {
-    background-color: white;
-    border-style: inset;
-    // border-color: green;
-    margin: 0;
-    // background-image: url(../../images/cactus.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .terrenoFrancisLeany {
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    // .header {
-    //   border-radius: 5px;
+      background-color: $main-color;
+      color: $main-text-color;
+      // text-shadow: 3px 3px 3px pink;
 
-    //   position: relative;
-    //   top: 2px;
-    //   width: 100%;
-    //   background-color: black;
-    //   color: white;
-    //   font-size: 35px;
-    //   text-align: center;
-    //   text-shadow: 3px 3px 3px pink;
-    //   position: fixed;
-    //   transition: 0.7s;
-    //   padding: 5px 5px;
-    // }
+      top: 0px;
+
+      width: 100vw;
+      height: 50px;
+
+      font-size: 30px;
+    }
 
     .main {
       display: flex;
       justify-content: center;
-      margin: 8px;
+      // margin: 8px;
 
       .imagenes {
-        margin: 5px;
+        // display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
+
         .img-container {
+          margin: 5px;
+
           .imagen {
-            margin: 5px;
             height: 200px;
             width: 250px;
           }
 
           .imagen:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
             position: relative;
-            transition: all 300ms;
+            transition: all 300ms ease-in-out;
           }
         }
       }
     }
-    .container2 {
-      background-color: black;
-      border-radius: 5px;
-      position: relative;
-      top: 10px;
 
+    .container2 {
+      display: flex;
+      justify-content: center;
       .precio {
-        justify-content: left;
-        font-size: 30px;
-        color: white;
+        text-align: center;
+
+        background-color: $main-color;
+        color: $main-text-color;
+
+        width: 100vw;
+
         font-size: 40px;
-        display: flex;
       }
     }
 
@@ -159,8 +154,12 @@
       font-size: 40px;
       display: flex;
       justify-content: center;
-      right: 10px;
-      bottom: 610px;
+      right: 30px;
+      bottom: 540px;
+      position: fixed;
+    }
+    .icon-whatsapp:hover {
+      transform: scale(1.1);
     }
 
     .icon-map {
@@ -168,8 +167,13 @@
       font-size: 40px;
       display: flex;
       justify-content: center;
-      right: 15px;
-      bottom: 555px;
+      right: 35px;
+      bottom: 490px;
+      position: fixed;
+    }
+
+    .icon-map:hover {
+      transform: scale(1.1);
     }
   }
 }

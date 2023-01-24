@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+
+  margin-top: 20px;
+
+  .teamSection {
+    font-size: 18px;
+
+    .plzContactTxt {
+      display: flex;
+      justify-content: center;
+    }
+
+    .teamMemberContainer {
+      display: flex;
+      justify-content: center;
+
+      .roleTxt {
+        margin-right: 5px;
+      }
+
+      .nameTxt {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,24 +1,24 @@
 import React from "react";
 import "./HomePage.scss";
-// import img1 from "../../images/img1.jpg";
-// import img2 from "../../images/img2.jpg";
-// import map from "../../images/map.jpg";
-// import { Icon } from "@iconify/react";
+
+import img1 from "./images/img1.jpg";
+import img2 from "./images/img2.jpg";
 import map from "./images/map.jpg";
+// import { Icon } from "@iconify/react";
 
 function TFLHomePage() {
   return (
-    <div className="container">
-      <div className="header">Terreno de Francis </div>
+    <div className="terrenoFrancisLeany">
+      <div className="header">Terreno de Francis Leany</div>
 
       <div className="main">
         <div className="imagenes">
           <div className="img-container">
-            {/* <img src={img1} className="imagen" /> */}
+            <img src={img1} className="imagen" />
           </div>
 
           <div className="img-container">
-            {/* <img src={img2} className="imagen" /> */}
+            <img src={img2} className="imagen" />
           </div>
           <div className="img-container">
             <img src={map} className="imagen" />

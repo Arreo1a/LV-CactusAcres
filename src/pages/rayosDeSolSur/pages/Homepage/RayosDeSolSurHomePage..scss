@@ -1,5 +1,7 @@
+@import "../../components/Navbar/RDSSNavbar.scss";
+
 .RayosDeSolSurHomePage {
-  background: #f4db88;
+  // background: #f4db88;
 
   .sign {
     display: flex;
@@ -39,11 +41,10 @@
       } //content-images
 
       .content-graph {
-       margin-bottom: 10px;
-       margin-top: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
 
         justify-content: center;
-       
 
         @media (min-width: 800px) {
           width: 50%;
@@ -68,13 +69,15 @@
 
   .footer {
     height: 80px;
-    background: rgb(53, 27, 100);
-    color: #ffae00;
+    background: $color-main;
+    color: $text-color-main;
 
     .Description {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      font-size: 18px;
     }
   }
 } //RayosDeSolSurHomePage

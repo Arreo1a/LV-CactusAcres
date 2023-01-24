@@ -2,7 +2,7 @@ import React from "react";
 
 // Components
 import Header from "../../components/Header/Header";
-import CompanyCard from "../../components/CompanyCards/CompanyCard";
+import Footer from "../../components/Footer/Footer";
 import LogoCompanyCard from "../../components/LogoCompanyCard/LogoCompanyCard";
 
 // Images
@@ -29,8 +29,8 @@ function HomePage() {
           <LogoCompanyCard
             pageUrl={"/rayos-de-sol-norte"}
             name={"Rayos De Sol Norte"}
-            topSectionBgColor={"#351b64"}
-            noLogoTextColor={"#ffae00"}
+            topSectionBgColor={"#005248"}
+            noLogoTextColor={"#ec990a"}
             isAvailable={false}
           />
           <LogoCompanyCard
@@ -43,19 +43,20 @@ function HomePage() {
           <LogoCompanyCard
             pageUrl={"/terreno-francis-leany"}
             name={"Terreno de Francis Leany"}
-            topSectionBgColor={"#43AE4A"}
-            noLogoTextColor={"#000000"}
+            topSectionBgColor={"#7111ba"}
+            noLogoTextColor={"#fef7ff"}
             isAvailable={false}
           />
           <LogoCompanyCard
             pageUrl={"/rayos-de-sol-sur"}
             name={"Rayos De Sol Sur"}
-            topSectionBgColor={"#351b64"}
-            noLogoTextColor={"#ffae00"}
+            topSectionBgColor={"#005248"}
+            noLogoTextColor={"#ec990a"}
             isAvailable={false}
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

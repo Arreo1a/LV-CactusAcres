@@ -1,14 +1,14 @@
 $headerHeight: 50px;
 
-$backgroundColor: #351b64;
-$textColor: #ffae00;
+$color-main: #005248;
+$text-color-main: #ec990a;
 
 .RDSNNavbar {
   display: flex;
   align-items: center;
 
-  background-color: $backgroundColor;
-  color: $textColor;
+  background-color: $color-main;
+  color: $text-color-main;
 
   height: $headerHeight;
 
@@ -16,7 +16,7 @@ $textColor: #ffae00;
     flex-direction: start;
 
     text-decoration: none;
-    color: $textColor;
+    color: $text-color-main;
 
     font-size: 30px;
     font-weight: 600;

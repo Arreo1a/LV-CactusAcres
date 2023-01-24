@@ -2,28 +2,24 @@ import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import datos from "./datos.json";
 //style
-import './BasicTable.scss'
+import "./BasicTable.scss";
 
 const Columns = [
-    {
-        Header:"Id",
-        accessor:"id"
-    },
-    {
-        Header:"Name",
-        accessor:"initials"
-    },
-    {
-        Header:"Estado",
-        accessor:"isSould"
-    }
-]
-
-
+  {
+    Header: "Number",
+    accessor: "id",
+  },
+  {
+    Header: "Name",
+    accessor: "initials",
+  },
+  {
+    Header: "Estado",
+    accessor: "isSould",
+  },
+];
 
 function BasicTable() {
-
-
   const columns = useMemo(() => Columns, []);
   const data = useMemo(() => datos, []);
 
@@ -41,29 +37,25 @@ function BasicTable() {
         {headerGroups.map((headerGroups) => (
           <tr {...headerGroups.getHeaderGroupProps()}>
             {headerGroups.headers.map((column) => (
-                 <th {...headerGroups.getHeaderGroupProps()}>{column.render('Header')}</th>
+              <th {...headerGroups.getHeaderGroupProps()}>
+                {column.render("Header")}
+              </th>
             ))}
-           
           </tr>
         ))}
       </thead>
 
       <tbody {...getTableBodyProps}>
-        {rows.map((row) =>{  
-            prepareRow(row)
-            return(
-                <tr {...row.getRowProps()}>
-                    {row.cells.map((cell) => {
-                        return(
-                            <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                        )
-                    })}
-                    
-                </tr>
-            )
-          
+        {rows.map((row) => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()}>
+              {row.cells.map((cell) => {
+                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
+              })}
+            </tr>
+          );
         })}
-      
       </tbody>
     </table>
   );
